@@ -11,43 +11,60 @@ public class informationPage {
         panel.setBounds(0, 0, 600, 600);
         panel.setLayout(null);
 
-        // Name Label and Text Field
-        JLabel nameLabel = new JLabel("اسم");
-        nameLabel.setFont(new Font("Tahoma", Font.BOLD, 14));
+       // Name Label and Text Field
+      JLabel nameLabel = new JLabel("name");
+      nameLabel.setFont(new Font("Tahoma", Font.BOLD, 14));
+      JTextField nameField = new JTextField(15);
+      nameField.setBounds(50, 10, 100, 20);
+      
         nameLabel.setBounds(10, 10, 100, 20);
-        JTextField nameField = new JTextField(15);
-        nameField.setBounds(50, 10, 100, 20);
+       
 
-        // Age Label and Text Field
-        JLabel ageLabel = new JLabel("سن");
+              // Age Label and Text Field
+        JLabel ageLabel = new JLabel("age");
         ageLabel.setFont(new Font("Tahoma", Font.BOLD, 14));
-        ageLabel.setBounds(10, 50, 100, 20);
         JTextField ageField = new JTextField(15);
         ageField.setBounds(50, 50, 100, 20);
+      
+        ageLabel.setBounds(10, 50, 100, 20);
+       
 
-        // Email Label and Text Field
-        JLabel emailLabel = new JLabel("ایمیل");
-        emailLabel.setFont(new Font("Tahoma", Font.BOLD, 14));
+// Email Label and Text Field
+JLabel emailLabel = new JLabel("email");
+emailLabel.setFont(new Font("Tahoma", Font.BOLD, 14));
+JTextField emailField = new JTextField(15);
+emailField.setBounds(50, 90, 100, 20);
         emailLabel.setBounds(10, 90, 100, 20);
-        JTextField emailField = new JTextField(15);
-        emailField.setBounds(50, 90, 100, 20);
-
+       
         // Software Familiarity Level
-        JLabel levelLabel = new JLabel("سطح آشنایی با نرم افزارهای مشابه");
-        levelLabel.setFont(new Font("Tahoma", Font.BOLD, 14));
+
+        JLabel levelLabel = new JLabel("Software Familiarity Level");
         levelLabel.setBounds(10, 130, 250, 20);
 
-        JRadioButton level1 = new JRadioButton("مبتدی");
-        level1.setFont(new Font("Tahoma", Font.PLAIN, 12));
+        JRadioButton level1 = new JRadioButton("Beginner");
         level1.setBounds(10, 160, 100, 20);
-        JRadioButton level2 = new JRadioButton("متوسط");
-        level2.setFont(new Font("Tahoma", Font.PLAIN, 12));
+        JRadioButton level2 = new JRadioButton("Intermediate");
         level2.setBounds(100, 160, 100, 20);
-        JRadioButton level3 = new JRadioButton("پیشرفته");
-        level3.setFont(new Font("Tahoma", Font.PLAIN, 12));
+        JRadioButton level3 = new JRadioButton("Advanced");
         level3.setBounds(190, 160, 100, 20);
-        JRadioButton level4 = new JRadioButton("بدون آشنایی");
+        JRadioButton level4 = new JRadioButton("No Experience");
+
+      
+        levelLabel.setFont(new Font("Tahoma", Font.BOLD, 14));
+       
+
+        
+        level1.setFont(new Font("Tahoma", Font.PLAIN, 12));
+       
+        
+        level2.setFont(new Font("Tahoma", Font.PLAIN, 12));
+        
+       
+        level3.setFont(new Font("Tahoma", Font.PLAIN, 12));
+        
+        
         level4.setFont(new Font("Tahoma", Font.PLAIN, 12));
+
         level4.setBounds(280, 160, 150, 20);
 
         // Group the radio buttons
@@ -58,8 +75,12 @@ public class informationPage {
         group.add(level4);
 
         // Next Page Button
-        JButton nextButton = new JButton("صفحه بعد");
+
+        JButton nextButton = new JButton("Next Page");
+
+       
         nextButton.setFont(new Font("Tahoma", Font.PLAIN, 14));
+
         nextButton.setBounds(10, 200, 100, 20);
         nextButton.addActionListener(e -> {
             // Remove current panel and move to Page2
