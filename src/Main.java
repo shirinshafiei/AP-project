@@ -1,5 +1,6 @@
 import javax.swing.*;
 import packages.informationPage;
+import java.awt.*;
 
 public class Main {
 
@@ -18,10 +19,12 @@ public class Main {
 
         // Create title label
         JLabel title = new JLabel("فرم نظرسنجی");
+        title.setFont(new Font("Tahoma", Font.BOLD, 18));
         title.setBounds(10, 10, 100, 20);
 
         // Create start button
         JButton startButton = new JButton("شروع!");
+        startButton.setFont(new Font("Tahoma", Font.PLAIN, 14));
         startButton.setBounds(10, 40, 100, 20);
 
         // Add components to the panel
